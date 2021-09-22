@@ -1,28 +1,8 @@
-import numpy as np
 import cv2
 import operator
 import numpy as np
-#from matplotlib import pyplot as plt
-
-
-def plot_many_images(images, titles, rows=1, columns=2):
-    """Plots each image in a given list as a grid structure. using Matplotlib."""
-    for i, image in enumerate(images):
-        plt.subplot(rows, columns, i + 1)
-        plt.imshow(image, 'gray')
-        plt.title(titles[i])
-        plt.xticks([]), plt.yticks([])  # Hide tick marks
-    plt.show()
-
 
 def show_image(img):
-    """Shows an image until any key is pressed"""
-    #    print(type(img))
-    #    print(img.shape)
-    #    cv2.imshow('image', img)  # Display the image
-    #    cv2.imwrite('images/gau_sudoku3.jpg', img)
-    #    cv2.waitKey(0)  # Wait for any key to be pressed (with the image window active)
-    #    cv2.destroyAllWindows()  # Close all windows
     return img
 
 
